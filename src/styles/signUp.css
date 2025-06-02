@@ -1,0 +1,167 @@
+*{
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right ,#29d987 ,#4ba058  );
+    min-height: 100vh;
+ }
+
+ form {
+    border: 1px solid silver;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    padding: 50px;
+    margin: 50px;
+    background-color: #fff;
+ }
+
+ h1 {
+    color: #00b067;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 40px;
+ }
+
+ .formField {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    height: 75px;
+ }
+
+ .formField span {
+    height: 10px;
+    text-align: left;
+    margin-top: 5px;
+    width: fit-content;
+    font-size: 0.7rem;
+    color: red;
+    line-height: 10px;
+    padding: 2px 3px;
+    border-radius: 3px;
+    background-color: rgba(255, 0, 0, 0.175);
+ }
+
+ .formField label {
+    text-align: left;
+    margin-bottom: 5px;
+    color: rgb(85, 85, 85);
+    font-size: 0.9rem;
+ }
+
+ .formInput {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 10px;
+    border: 1px solid silver;
+    transition: all 0.2s ease-in;
+ }
+
+ .uncompleted {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 10px;
+    border: 1px solid red;
+    transition: all 0.2s ease-in;
+ }
+
+ .formInput:focus ,
+ .uncompleted:focus {
+    outline: none;
+    line-height: 30px;
+    height: 30px;
+    border: 1px solid #1a73e8;
+ }
+
+ .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .buttons button {
+    background-color: #00b067;
+    padding: 10px 20px;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+ }
+
+ .buttons button:hover {
+    background-color: #006e40;
+ }
+
+ .buttons a {
+    color: #00b067;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.2s ease-in;
+ }
+
+ .buttons a:hover {
+    color: #006e40;
+ }
+
+ .checkBox {
+    display: flex;
+    font-size: 0.85rem;
+    flex-direction: row !important;
+    align-items: center;
+    height: 20px !important;
+    text-align: center;
+ }
+
+ .formField:nth-child(6) label{
+    color: #1a73e8;
+ }
+
+ input[type="checkbox"] {
+    margin-left: 20px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #030c17;
+    appearance: none;
+    border-radius: 5px;
+    transition: all 0.2s ease-in; 
+ }
+
+ input[type="checkbox"]:checked {
+    width: 18px;
+    height: 18px;
+    background-color:  #7d7d7d;
+    border-radius: 50%;
+ }
+
+ input[type="checkbox"]:focus {
+    width: 18px;
+    height: 18px;
+    outline: none;
+    border: 1px solid #000000;
+ }
+
+ @media (max-width: 440px){
+    form {
+        padding: 20px ;
+        margin: 50px 20px;
+        width: 90%;
+    }
+
+    .formInput {
+        width: 90%;
+    }
+
+    .uncompleted {
+        width: 90%;
+    }
+ }
